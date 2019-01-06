@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".MainActivity"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Direction Tracker"
+                android:padding="26dip"
+                android:gravity="center"
+            />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            >
+
+            <TextView
+                android:layout_weight=".33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dip"
+                android:id="@+id/PMName"
+                android:text="Pedro Mendes" />
+
+            <TextView
+                android:id="@+id/DSName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Diogo Silva" />
+
+            <TextView
+                android:id="@+id/CAName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".33"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Carlos Abreu" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:layout_weight=".33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/PMNumber"
+                android:gravity="center"
+                android:text="2022114" />
+
+            <TextView
+                android:layout_weight=".33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/DSNumber"
+                android:text="2020114" />
+
+            <TextView
+                android:layout_weight=".33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/CANumber"
+                android:gravity="center"
+                android:text="Nao faço ideia" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="35dip"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/connectionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept Connections" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Actions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="14dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/backgroundButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Landscape" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/ArrowsTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+            <ImageView
+                android:id="@+id/topArrow"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:src="@drawable/arrow"
+                android:visibility="invisible"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/mobileOrientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/leftArrow"
+                android:layout_weight=".40"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:rotation="-90"
+                android:src="@drawable/arrow"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_weight=".20"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:src="@drawable/phone"/>
+            <ImageView
+                android:id="@+id/rightArrow"
+                android:layout_weight=".40"
+                android:rotation="90"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/arrow"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:visibility="invisible"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/ArrowsDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+            <ImageView
+                android:id="@+id/downArrow"
+                android:layout_weight=".20"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:src="@drawable/arrow"
+                android:visibility="invisible"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
